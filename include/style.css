@@ -1647,9 +1647,15 @@ ul:after{
 	width: 100%
 }
 .team {
-	flex: 1 50%;
+	flex: 1 100%;
 	margin-bottom: 2em;
 	padding: 0 1em;
+}
+@media (min-width: 450px) {
+	.team {
+		flex: 1 50%;
+		max-width: 50%;
+	}
 }
 @media (min-width: 768px) {
 	.team {

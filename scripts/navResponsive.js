@@ -14,7 +14,6 @@ function navResponsive() {
 // CURRENTLY - MANUALLY TYPE IN EVERY NAV li THAT HAS A DROP DOWN
 // CHANGE TO - FIND ALL THAT HAVE A SPECIFIC TAG / CLASS e.t.c.
 function resetNavDrop(){
-	document.getElementById("team").className = "mainNavDropUp";
 	document.getElementById("tournament").className = "mainNavDropUp";
 	document.getElementById("social").className = "mainNavDropUp";
 	resetSubNavDrop();
@@ -22,8 +21,6 @@ function resetNavDrop(){
 
 // Reset 2nd tier of nav links
 function resetSubNavDrop(){
-	document.getElementById("teamStaffs").className = "mainNavDropUp";
-	document.getElementById("teamHereWor").className = "mainNavDropUp";
 	document.getElementById("clubchamps").className = "mainNavDropUp";
 }
 
