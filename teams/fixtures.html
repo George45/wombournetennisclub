@@ -1,0 +1,295 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+	<head>
+		<title>Team Fixtures - Wombourne Tennis Club</title>
+		<link rel="stylesheet" type="text/css" href="../include/style.css?v=2">
+		<meta charset="UTF-8">
+		<!-- Mobile Compatibility -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Browser / App Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	
+	<body>
+		<!-- Top Banner -->
+		<div class="topBannerContainer">
+			<div class="topBanner">
+				<div class="topBannerImg">
+					<div class="imgSlider">
+						<ul>
+							<li><img src="../img/banner3.jpg" alt="Wombourne Tennis Club Courts"></li>
+						</ul>
+					</div>
+					<div class="topBannerLogo">
+						<img src="../img/other/wombourneLogo.png" alt="Badge Logo">
+					</div>
+					<div class="topBannerOverlay">
+						<h2 class="imgOverlay"><span><img src="../img/other/wombourneLogo.png" alt="Badge Logo">Wombourne Tennis Club</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Main Nav Bar -->
+		<div class="mainNavContainer">
+			<div id="mainNavBar" class="mainNavBar">
+				<ul class="mainNav">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#" onclick="toggleNavDrop('team')">Teams<div class="arrowDown arrowDisplay"></div></a>
+						<ul id="team" class="mainNavDropUp"> 
+							<li><a href="../teams/fixtures.html">Fixtures</a></li>
+							<li><a href="#" onclick="toggleSubNavDrop('teamStaffs')">Staffordshire<div class="arrowRight arrowDisplay"></div></a>
+								<ul id="teamStaffs" class="mainNavDropUp">
+									<li><a href="../teams/staffsmens.html">Mens Team</a></li>
+									<li><a href="../teams/staffsladies.html">Ladies Team</a></li>
+								</ul>
+							</li>
+							<li><a href="#" onclick="toggleSubNavDrop('teamHereWor')">Hereford & Worcester<div class="arrowRight arrowDisplay"></div></a>
+								<ul id="teamHereWor" class="mainNavDropUp">
+									<li><a href="../teams/herefordworcestermens.html">Mens Team</a></li>
+									<li><a href="../teams/herefordworcesterladies.html">Ladies Team</a></li>
+									<li><a href="../teams/herefordworcestermixed.html">Mixed Team</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="toggleNavDrop('tournament')">Tournaments<div class="arrowDown arrowDisplay"></div></a>
+						<ul id="tournament" class="mainNavDropUp">
+							<li><a href="../tournaments/startofseason.html">Start of Season</a></li>
+							<li><a href="../tournaments/endofseason.html">End of Season</a></li>
+							<li><a href="../tournaments/kenrobertscup.html">Ken Roberts Cup</a></li>
+							<li><a href="../tournaments/pamrogersladiesday.html">Pam Rogers Ladies Day</a></li>
+							<li><a href="../tournaments/captainscup.html">Captains Cup</a></li>
+							<li><a href="#" onclick="toggleSubNavDrop('clubchamps')">Club Championships<div class="arrowRight arrowDisplay"></div></a>
+								<ul id="clubchamps" class="mainNavDropUp">
+									<li><a href="../tournaments/clubchampsmenssingles.html">Mens Singles</a></li>
+									<li><a href="../tournaments/clubchampsmensdoubles.html">Mens Doubles</a></li>
+									<li><a href="../tournaments/clubchampsladiessingles.html">Ladies Singles</a></li>
+									<li><a href="../tournaments/clubchampsladiesdoubles.html">Ladies Doubles</a></li>
+									<li><a href="../tournaments/clubchampsmixeddoubles.html">Mixed Doubles</a></li>
+									<li><a href="../tournaments/clubchampsmensvets.html">Mens Veterans</a></li>
+									<li><a href="../tournaments/clubchampsmixedvets.html">Mixed Veterans</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="toggleNavDrop('social')">Social<div class="arrowDown arrowDisplay"></div></a>
+						<ul id="social" class="mainNavDropUp">
+							<li><a href="../social/highflyers.html">High Flyers</a></li>
+							<li><a href="../social/presentationevening.html">Presentation Evening</a></li>
+						</ul>
+					</li>
+					<li><a href="../membership.html">Memberships</a></li>
+					<li><a href="../juniors.html">Juniors</a></li>
+					<li><a href="../coaching.html">Coaching</a></li>
+					<li><a href="../booking.html">Book a Court</a></li>
+					<li><a href="../contacts.html">Contacts</a></li>
+					<li><a href="../policies.html">Policies</a></li>
+					<li><a href="../history.html">History</a></li>
+					<a href="javascript:void(0);" class="icon" onclick="navResponsive()">&#9776;</a>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Page Content Container -->	
+		<div class="main">		
+			<!-- Primary Content -->	
+			<div class="col-3">
+				<div class="section">
+					<div class="contentWrap">					
+						<div class="pageTitle">
+							<h1>Upcoming Fixtures</h1>
+							<div class="subTitleLinkGroup">
+								<h3 class="pageSubtitle pageSubtitleFull" style="color: #009;margin-bottom: 0;margin-top: 15px;">Staffordshire Summer Leagues:</h3>
+								<h3 class="pageSubtitle"><a href="http://www.staffstennisleague.co.uk/html/tablesdetail.asp?clubid=36&nm=Wombourne">Wombourne</a></h3>
+							</div>
+							<div class="subTitleLinkGroup">
+								<h3 class="pageSubtitle pageSubtitleFull" style="color: #009;margin-bottom: 0;margin-top: 15px;">Herefordshire and Worcestershire Winter Leagues: </h3>
+								<h3 class="pageSubtitle"><a href="https://lta.tournamentsoftware.com/sport/league/team?id=E1C7ED56-0C14-4AE4-B0A6-12829487B11D&team=110">Mens</a></h3>
+								<h3 class="pageSubtitle"><a href="https://lta.tournamentsoftware.com/sport/league/team?id=4B6F6CF7-57B5-4094-A60E-2DC2C594DA54&team=106">Ladies</a></h3>
+								<h3 class="pageSubtitle"><a href="https://lta.tournamentsoftware.com/sport/league/team?id=8D8566C8-89C1-4098-91DD-F678F382E884&team=74">Mixed A</a></h3>
+								<h3 class="pageSubtitle"><a href="https://lta.tournamentsoftware.com/sport/league/team?id=8D8566C8-89C1-4098-91DD-F678F382E884&team=75">Mixed B</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Men's A Team Fixtures -->
+				<div class="section">
+					<div class="contentWrap">					
+						<div class="sectionHead">
+							<div class="sectionHeadTitle">
+								<h2>Mens A Team Results (Staffordshire) - 2021</h2>
+							</div>
+							<div class="sectionHeadSide">
+								<a href="javascript:void(0)" onclick="toggleDisplay('mensAFixtures2021');">Hide / Show</a>
+							</div>	
+						</div>
+						<div id="mensAFixtures2021" class="sectionBody">
+							<table class="tableSmall tableNoHover">
+								<tr><th>Date</th><th>Day</th><th>Time</th><th>Home / Away</th><th>Opposition</th><th colspan="4">Players</th><th>Result</th></tr>
+								<tr><td>May 30th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Streetly B</td><td>Jack</td><td>George</td><td>Dan</td><td>Adrian</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jun 13th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>David Lloyd Dudley C</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="rowStatWLD">-</td></tr>
+								<tr><td>Jul 4th</td><td>Sunday</td><td>10:00</td><td>Away</td><td>Halesowen</td><td>Jack</td><td>George</td><td>Andy S</td><td>Adrian</td><td class="rowStatWLD">L 1-3</td></tr>
+								<tr><td>Jul 11th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Wolverhampton C</td><td>Jack</td><td>George</td><td>Dan</td><td>Owen</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Jul 16th</td><td>Friday</td><td>18:30</td><td>Away</td><td>Streetly B</td><td>Andy S</td><td>George</td><td>Owen</td><td>Andy H</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Aug 15th</td><td>Sunday</td><td>10:00</td><td>Away</td><td>Brewood A</td><td>Dan</td><td>George</td><td>Andy S</td><td>John S</td><td class="rowStatWLD">D 2-2</td></tr>
+								<tr><td>Aug 22nd</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Brewood A</td><td>Dan</td><td>George</td><td>Andy</td><td>Adrian</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Aug 25th</td><td>Wednesday</td><td>18:30</td><td>Away</td><td>Wolverhampton C</td><td>George</td><td>Owen</td><td>Angus</td><td>Will</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>Sep 10th</td><td>Friday</td><td>18:30</td><td>Away</td><td>David Lloyd Dudley C</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="rowStatWLD">-</td></tr>
+								<tr><td>Sep 12th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Halesowen</td><td>Andy S</td><td>Dan</td><td>Andy H</td><td>George</td><td class="rowStatWLD">W 3-1</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>	
+
+				<!-- Men's B Team Fixtures -->
+				<div class="section">
+					<div class="contentWrap">					
+						<div class="sectionHead">
+							<div class="sectionHeadTitle">
+								<h2>Mens B Team Results (Staffordshire) - 2021</h2>
+							</div>
+							<div class="sectionHeadSide">
+								<a href="javascript:void(0)" onclick="toggleDisplay('mensBFixtures2021');">Hide / Show</a>
+							</div>	
+						</div>
+						<div id="mensBFixtures2021" class="sectionBody">
+							<table class="tableSmall tableNoHover">
+								<tr><th>Date</th><th>Day</th><th>Time</th><th>Home / Away</th><th>Opposition</th><th colspan="4">Players</th><th>Result</th></tr>
+								<tr><td>May 26th</td><td>Wednesday</td><td>18:30</td><td>Away</td><td>Albert C</td><td>Adrian</td><td>Owen</td><td>Mick</td><td>Andy H</td><td class="rowStatWLD">D 2-2</td></tr>
+								<tr><td>Jun 20th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>David Lloyd Great Barr B</td><td>Adrian</td><td>Owen</td><td>Mick</td><td>Will</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Jun 27th</td><td>Sunday</td><td>10:30</td><td>Away</td><td>Wollaston C</td><td>Andy H</td><td>Owen</td><td>Will</td><td>Mick</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jul 11th</td><td>Sunday</td><td>10:30</td><td>Away</td><td>Linden Lea A</td><td>John S</td><td>Mick</td><td>Richard</td><td>Adrian</td><td class="rowStatWLD">L 1-3</td></tr>
+								<tr><td>Jul 14th</td><td>Wednesday</td><td>18:30</td><td>Home</td><td>Albert C</td><td>Adrian</td><td>Owen</td><td>Mick</td><td>Will</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jul 18th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Wolverhampton E</td><td>Andy H</td><td>Owen</td><td>Adrian</td><td>Angus</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jul 25th</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Wollaston B</td><td>Mick</td><td>Owen</td><td>John S</td><td>Angus</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>Aug 1st</td><td>Sunday</td><td>10:30</td><td>Home</td><td>Wollaston C</td><td>Will</td><td>Mick</td><td>John S</td><td>Angus</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Aug 3rd</td><td>Tuesday</td><td>18:30</td><td>Away</td><td>Wolverhampton E</td><td>Owen</td><td>Andy H</td><td>Will</td><td>Adrian</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Aug 8th</td><td>Sunday</td><td>10:00</td><td>Home</td><td>Linden Lea A</td><td>Andy H</td><td>Owen</td><td>Angus</td><td>Mick</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Aug 13th</td><td>Friday</td><td>18:30</td><td>Away</td><td>David Lloyd Great Barr B</td><td>Mick</td><td>Andy H</td><td>Will</td><td>Adrian</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>Aug 15th</td><td>Sunday</td><td>10:30</td><td>Home </td><td>Wollaston B</td><td>Will</td><td>Mick</td><td>Adrian</td><td>Andy H</td><td class="rowStatWLD">D 2-2</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- Ladies A Team Fixtures -->
+				<div class="section">
+					<div class="contentWrap">					
+						<div class="sectionHead">
+							<div class="sectionHeadTitle">
+								<h2>Ladies A Team Results (Staffordshire) - 2021</h2>
+							</div>
+							<div class="sectionHeadSide">
+								<a href="javascript:void(0)" onclick="toggleDisplay('ladiesAFixtures2021');">Hide / Show</a>
+							</div>	
+						</div>
+						<div id="ladiesAFixtures2021" class="sectionBody">
+							<table class="tableSmall tableNoHover">
+								<tr><th>Date</th><th>Day</th><th>Time</th><th>Home / Away</th><th>Opposition</th><th colspan="4">Players</th><th>Result</th></tr>
+								<tr><td>May 22nd</td><td>Saturday</td><td>10:00</td><td>Home</td><td>David Lloyd Dudley</td><td>Alison</td><td>Caroline</td><td>Jackie</td><td>Kirsten</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jun 16th</td><td>Wednesday</td><td>18:30</td><td>Home</td><td>David Lloyd Dudley</td><td>Alison</td><td>Julie S</td><td>Kirsten</td><td>Helen</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Jun 19th</td><td>Saturday</td><td>10:00</td><td>Home</td><td>Brewood</td><td>Alison</td><td>Caroline</td><td>Kirsten</td><td>Helen</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jun 30th</td><td>Wednesday</td><td>18:30</td><td>Home</td><td>Linden Lea</td><td>Alison</td><td>Caroline</td><td>Kirsten</td><td>Helen</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Jul 2nd</td><td>Friday</td><td>18:30</td><td>Away</td><td>Brewood</td><td>Caroline</td><td>Sarah</td><td>Helen</td><td>Kirsten</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Jul 14th</td><td>Wednesday</td><td>18:30</td><td>Away</td><td>Linden Lea</td><td>Caroline</td><td>Alison</td><td>Kirsten</td><td>Helen</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Aug 18th</td><td>Wednesday</td><td>18:30</td><td>Home</td><td>Linden Lea</td><td>Kirsten</td><td>Helen</td><td>Caroline</td><td>Julie S</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Sep 1st</td><td>Wednesday</td><td>18:30</td><td>Away</td><td>Linden Lea</td><td>Caroline</td><td>Alison</td><td>Kirsten</td><td>Helen</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Sep 8th</td><td>Wednesday</td><td>18:30</td><td>Home</td><td>Brewood</td><td>Helen</td><td>Caroilne</td><td>Jackie</td><td>Charlotte</td><td class="rowStatWLD">D 2-2</td></tr>
+								<tr><td>Sep 11th</td><td>Saturday</td><td>10:00</td><td>Away</td><td>David Lloyd Dudley</td><td>Caroline</td><td>Helen</td><td>Wendy</td><td>Charlotte</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>Sep 17th</td><td>Friday</td><td>18:30</td><td>Away</td><td>Brewood</td><td>Sarah</td><td>Caroline</td><td>Maddy</td><td>Kirsten</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Oct 2nd</td><td>Saturday</td><td>10:00</td><td>Away</td><td>David Lloyd Dudley</td><td>Caroline</td><td>Kirsten</td><td>Wendy</td><td>Charlotte</td><td class="rowStatWLD">L 1-3</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>		
+
+				<!-- Ladies B Team Fixtures -->
+				<div class="section">
+					<div class="contentWrap">					
+						<div class="sectionHead">
+							<div class="sectionHeadTitle">
+								<h2>Ladies B Team Results (Staffordshire) - 2021</h2>
+							</div>
+							<div class="sectionHeadSide">
+								<a href="javascript:void(0)" onclick="toggleDisplay('ladiesBFixtures2021');">Hide / Show</a>
+							</div>	
+						</div>
+						<div id="ladiesBFixtures2021" class="sectionBody">
+							<table class="tableSmall tableNoHover">
+								<tr><th>Date</th><th>Day</th><th>Time</th><th>Home / Away</th><th>Opposition</th><th colspan="4">Players</th><th>Result</th></tr>
+								<tr><td>May 19th</td><td>Wednesday</td><td>18:30</td><td>Away</td><td>Tettenhall B</td><td>Julie S</td><td>Sarah</td><td>Jackie</td><td>Charlotte</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>May 29th</td><td>Saturday</td><td>10:00</td><td>Home</td><td>Halesowen</td><td>Jackie</td><td>Bonnie</td><td>Charlotte</td><td>Betty</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>Jun 5th</td><td>Saturday</td><td>14:30</td><td>Away</td><td>Albert D</td><td>Jackie</td><td>Julie S</td><td>Bonnie</td><td>Wendy</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Jun 12th</td><td>Saturday</td><td>10:00</td><td>HomeL</td><td>Tettenhall A</td><td>Jackie</td><td>Julie S</td><td>Jule F</td><td>Wendy</td><td class="rowStatWLD">L 0-4</td></tr>
+								<tr><td>Jun 20th</td><td>Sunday</td><td>13:30</td><td>Away</td><td>Halesowen</td><td>Jackie</td><td>Charlotte</td><td>Wendy</td><td>Julie F</td><td class="rowStatWLD">L 1-3</td></tr>
+								<tr><td>Jun 26th</td><td>Saturday</td><td>10:00</td><td>Home</td><td>Cheslyn Hay & Cannock Chase A</td><td>Jackie</td><td>Sarah</td><td>June</td><td>Charlotte</td><td class="rowStatWLD">D 2-2</td></tr>
+								<tr><td>Jul 17th</td><td>Saturday</td><td>10:00</td><td>Home</td><td>Cheslyn Hay & Cannock Chase B</td><td>Jackie</td><td>Charlotte</td><td>Julie F</td><td>Bonnie</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Aug 4th</td><td>Wednesday</td><td>18:30</td><td>Away</td><td>Tettenhall A</td><td>Julie</td><td>Sarah</td><td>Jackie</td><td>Bonnie</td><td class="rowStatWLD">D 2-2</td></tr>
+								<tr><td>Aug 20th</td><td>Friday</td><td>18:30</td><td>Away</td><td>Cheslyn Hay & Cannock Chase B</td><td>Sarah</td><td>Julie S</td><td>Jackie</td><td>Wendy</td><td class="rowStatWLD">W 4-0</td></tr>
+								<tr><td>Aug 29th</td><td>Sunday</td><td>14:00</td><td>Away</td><td>Cheslyn Hay & Cannock Chase A</td><td>Jackie</td><td>Bonnie</td><td>Betty</td><td>Charlotte</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Sep 4th</td><td>Saturday</td><td>10:00</td><td>Home</td><td>Tettenhall B</td><td>Charlotte</td><td>Jenny</td><td>Betty</td><td>Wendy</td><td class="rowStatWLD">W 3-1</td></tr>
+								<tr><td>Sep 25th</td><td>Saturday</td><td>10:00</td><td>Home</td><td>Albert D</td><td>Jackie</td><td>Julie S</td><td>Julie F</td><td>Wendy</td><td class="rowStatWLD">L 0-4</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->		
+		<div class="footerContainer">
+			<div class="footerContent">
+				<div class="footerHead">
+					<h3>Quick Links</h3>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="https://www.facebook.com/WombourneTennisClub/" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/tenniswombourne" target="_blank">Twitter</a></li>
+						<li><a href="https://www.instagram.com/WombourneTennisClub/" target="_blank">Instagram</a></li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="https://wombourne.play-cricket.com/">Wombourne Cricket Club</a></li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="https://www.wombournebowlsclub.co.uk/">Wombourne Bowls Club</a></li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="../policies.html">Policies</a></li>
+						<li><a href="../contacts.html">Contact Us</a></li>
+						<li><a href="../sitemap.html">Site map</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Load Scripts -->	
+		<script src="../scripts/navResponsive.js?v=2023.7.1"></script>
+		<script src="../scripts/toggleDisplay.js"></script>
+	
+	</body>
+</html>

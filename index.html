@@ -1,0 +1,344 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+	<head>
+		<title>Wombourne Tennis Club</title>
+		<link rel="stylesheet" type="text/css" href="include/style.css?v=2">
+		<meta charset="UTF-8">
+		<!-- Mobile Compatibility -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Browser / App Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	
+	<body>
+		<!-- Top Banner -->
+		<div class="topBannerContainer">
+			<div class="topBanner">
+				<div class="topBannerImg">
+					<div class="imgSlider">
+						<ul>
+							<li><img src="img/banner3.jpg" alt="Wombourne Tennis Club Courts"></li>
+						</ul>
+					</div>
+					<div class="topBannerLogo">
+						<img src="img/other/wombourneLogo.png" alt="Badge Logo">
+					</div>
+					<div class="topBannerOverlay">
+						<h2 class="imgOverlay"><span><img src="img/other/wombourneLogo.png" alt="Badge Logo">Wombourne Tennis Club</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Main Nav Bar -->
+		<div class="mainNavContainer">
+			<div id="mainNavBar" class="mainNavBar">
+				<ul class="mainNav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#" onclick="toggleNavDrop('team')">Teams<div class="arrowDown arrowDisplay"></div></a>
+						<ul id="team" class="mainNavDropUp"> 
+							<li><a href="teams/fixtures.html">Fixtures</a></li>
+							<li><a href="#" onclick="toggleSubNavDrop('teamStaffs')">Staffordshire<div class="arrowRight arrowDisplay"></div></a>
+								<ul id="teamStaffs" class="mainNavDropUp">
+									<li><a href="teams/staffsmens.html">Mens Team</a></li>
+									<li><a href="teams/staffsladies.html">Ladies Team</a></li>
+								</ul>
+							</li>
+							<li><a href="#" onclick="toggleSubNavDrop('teamHereWor')">Hereford & Worcester<div class="arrowRight arrowDisplay"></div></a>
+								<ul id="teamHereWor" class="mainNavDropUp">
+									<li><a href="teams/herefordworcestermens.html">Mens Team</a></li>
+									<li><a href="teams/herefordworcesterladies.html">Ladies Team</a></li>
+									<li><a href="teams/herefordworcestermixed.html">Mixed Team</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="toggleNavDrop('tournament')">Tournaments<div class="arrowDown arrowDisplay"></div></a>
+						<ul id="tournament" class="mainNavDropUp">
+							<li><a href="tournaments/startofseason.html">Start of Season</a></li>
+							<li><a href="tournaments/endofseason.html">End of Season</a></li>
+							<li><a href="tournaments/kenrobertscup.html">Ken Roberts Cup</a></li>
+							<li><a href="tournaments/pamrogersladiesday.html">Pam Rogers Ladies Day</a></li>
+							<li><a href="tournaments/captainscup.html">Captains Cup</a></li>
+							<li><a href="#" onclick="toggleSubNavDrop('clubchamps')">Club Championships<div class="arrowRight arrowDisplay"></div></a>
+								<ul id="clubchamps" class="mainNavDropUp">
+									<li><a href="tournaments/clubchampsmenssingles.html">Mens Singles</a></li>
+									<li><a href="tournaments/clubchampsmensdoubles.html">Mens Doubles</a></li>
+									<li><a href="tournaments/clubchampsladiessingles.html">Ladies Singles</a></li>
+									<li><a href="tournaments/clubchampsladiesdoubles.html">Ladies Doubles</a></li>
+									<li><a href="tournaments/clubchampsmixeddoubles.html">Mixed Doubles</a></li>
+									<li><a href="tournaments/clubchampsmensvets.html">Mens Veterans</a></li>
+									<li><a href="tournaments/clubchampsmixedvets.html">Mixed Veterans</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="toggleNavDrop('social')">Social<div class="arrowDown arrowDisplay"></div></a>
+						<ul id="social" class="mainNavDropUp">
+							<li><a href="social/highflyers.html">High Flyers</a></li>
+							<li><a href="social/presentationevening.html">Presentation Evening</a></li>
+						</ul>
+					</li>
+					<li><a href="membership.html">Memberships</a></li>
+					<li><a href="juniors.html">Juniors</a></li>
+					<li><a href="coaching.html">Coaching</a></li>
+					<li><a href="booking.html">Book a Court</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="policies.html">Policies</a></li>
+					<li><a href="history.html">History</a></li>
+					<a href="javascript:void(0);" class="icon" onclick="navResponsive()">&#9776;</a>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Page Content Container -->
+		<div class="main">		
+			<!-- Primary Content -->	
+			<div class="col-1">
+				<div class="section">
+					<div class="contentWrap">
+						<div class="pageTitle">
+							<h1>Welcome to Wombourne Tennis Club</h1>
+						</div>
+						<div class="contentArea">
+							<div class="content-col-3">
+								<div class="contentInfo">
+									<p>Wombourne Tennis Club is a section of the Wombourne Cricket, Tennis & Bowls Club situated on the green in the centre of the village.  The tennis section has existed for over 50 years, ever since the grounds were donated to the club for the playing of sport and boasts an ever growing number of members.</p>
+									<p>The main clubhouse is used by the Tennis, Cricket and Bowls clubs and is host to a number of events throughout the year, such as cabarets, quizzes and dances.  Our section is organised by a committee who are elected each year at our annual general meeting.  Committee meetings are held regularly and all members are welcome to attend.</p>
+									<p>We have two teams for both the Men's and Ladies in the Staffordshire Inter Tennis League and a Ladies and Mixed team in the Hereford & Worcester Winter League.  Throughout the year, the tennis section hosts a large number of tournaments and events which all members are encouraged to join.  Juniors tennis and coaching sessions for a variety of ages are also available.</p>
+								</div>
+							</div>
+						</div>		
+						<!-- <div class="contentArea">
+							<div class="contentSubTitle">
+								<h2>Featured Items</h2>
+							</div>
+							<div class="newsPreview">
+								<div class="contentSubTitle">
+									<h5>Wombourne Tennis Club supports the High Flyers</h5>
+								</div>
+								<div class="content-col-1">
+									<div class="contentImg">
+										<img src="img/news/high_flyers.jpg" alt="">
+									</div>
+								</div>
+								<div class="content-col-2">
+									<div class="contentInfo">
+										<p>The High Flyers are a small registered charity who operate a daytime group for young adults with learning difficulties in South Staffordshire.  They are dedicated to being a user lead group and aim to support their members, helping them to reach their full potential.</p>
+										<p>The Higher Flyers run tennis sessions during the summer months each year.  This year their sessions will be held on Wednesday afternoons between 1:30 - 3:00 pm, commencing halfway during may.  Each session holds a variety of ball games, events, keep fit exercises  and tennis where everyone is encouraged to get involved and have fun.</p>
+										<p>Interested in finding out more, contact Sheila Baker (07753 582781) for further information.</p>
+										<p><a href="http://www.highflyers-southstaffs.co.uk/" class="newsPreviewLink">High Flyers website</a></p>
+										<p><a href="social/highflyers.html" class="newsPreviewLink">WTC information page</a></p>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+						<!-- <div class="contentArea">
+							<div class="contentSubTitle">
+								<h2>Upcoming Events</h2>
+							</div>
+						</div> -->
+
+						<div class="contentArea">
+							<div class="contentSubTitle">
+								<h2>News</h2>
+							</div>
+
+							<div class="newsPreview">
+								<div class="contentSubTitle">
+									<h5>Tennis Camps - 28/06/2023</h5>
+								</div>
+								<div class="content-col-6">
+									<div class="contentImg">
+										<img src="img/news/dan_coaching_summer_camps.jpeg" alt="Total Tennis summer tennis camps" style="max-width: 300px">
+									</div>
+								</div>
+								<div class="content-col-6">
+									<div class="contentInfo">
+										<p>Total Tennis are running a series of Tennis Camps throughout August.  Enquire now to book your place !</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="newsPreview">
+								<div class="contentSubTitle">
+									<h5>2023 Club Championships Final Signup - 24/06/2023</h5>
+								</div>
+								<div class="content-col-6">
+									<div class="contentImg">
+										<img src="img/news/club_champs_2023_2.jpg" alt="Club Championship Trophies" style="max-width: 300px">
+									</div>
+								</div>
+								<div class="content-col-6">
+									<div class="contentInfo">
+										<p>Last chance to register for the 2023 Club Championships. The cut-off point has been extended to 28th June 10PM to allow for last minute entries. All finals will be held on Saturday 16th September, so it's imperative that you only enter if you are available on this date. Signup here before 28th June: <a href="https://forms.office.com/r/0YDZhekp69" target="_blank" class="newsPreviewLink">https://forms.office.com/r/0YDZhekp69</a></p>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="newsPreview">
+								<div class="contentSubTitle">
+									<h5>November Newsletter</h5>
+								</div>
+								<div class="content-col-3">
+									<div class="contentInfo memberForm">
+										<li><a href="downloads/Nov_2022_Newsletter.pdf" download="Wombourne Tennis Club November Newsletter"><img src="img/other/pdfIcon.png">November Newsletter</a></li>
+									</div>
+								</div>
+							</div> -->
+						</div>					
+					</div>
+				</div>
+			</div>
+			
+			<!-- Side Bar Content -->		
+			<div class="col-2">			
+				<!-- Sponsors -->
+				<div class="sponsor-info-container">
+					<div id="sponsors" class="section">
+						<div class="contentWrap">
+							<div class="contentSubTitle" style="margin-left: 5px">
+								<h2>Our Sponsors</h2>
+							</div>
+							<div class="sponsorImgSlides">
+								<a href="https://www.lifestylehearingsolutions.co.uk/" target="_blank">
+									<img class="sponImg fade" src="img/sponsors/hear_in_wombourne.png" alt="Hear In Wombourne">
+								</a>
+								<a href="https://www.thekingalfredschool.co.uk/" target="_blank">
+									<img class="sponImg fade" src="img/sponsors/Kind_Alfred_School.png"  alt="Kind Alfred School">
+								</a>
+								<a href="https://www.davrosteel.co.uk/" target="_blank">
+									<img class="sponImg fade" src="img/sponsors/davrosteel.png"  alt="Davro Steel">
+								</a>
+								<a href="sponsor-us.html">
+									<img class="sponImg fade" src="img/sponsors/new-sponsor.png">
+								</a>
+							</div>
+							<div class="sponsorImgDots">
+								<span class="dot" onclick="currentSlide(0)"></span>
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+							</div>
+						</div>
+					</div>
+					<!-- Sponsor Ad -->
+					<div id="sponsorsAd" class="section">
+						<div class="contentWrap">
+							<div class="contentSubTitle" style="margin-left: 5px">
+								<h2>Sponsorship Information</h2>
+							</div>
+							<div class="contentInfo" style="padding: 5px">
+								<div style="width:100%; margin-bottom:10px;">
+									<a href="sponsor-us.html" class="newsPreviewLink" style="width:100%">Sponsorship Info</a>
+								</div>
+								<div class="memberForm">
+									<a href="downloads/sponsor_us.pdf" download="Wombourne Tennis Club Sponsorship Form" class="newsPreviewLink" style="width:100%"><img src="img/other/pdfIcon.png">Sponsorship Form</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Events Calendar -->
+				<div id="calendar" class="section">
+					<div class="contentWrap">
+						<div class="calendarHead">
+							<h2>Wombourne Tennis Club Events Calendar</h2>
+						</div>
+						<div class="calendarTabs">
+							<a id="calendarView" class="calendarCurTab" href="javascript:void(0);">Calendar View</a>			
+							<a id="listView" href="javascript:void(0);">Event List</a>
+						</div>
+						<div id="calendarControls" class="calendarControls">
+							<div class="calControlWrap">
+								<div class="calendarSwitch">
+									<a href="javascript:void(0);">
+										<div id="prevMonth" class="calendarPrev arrowDisplay"></div>
+									</a>
+								</div>
+								<div id="calendarMonth" class="calendarMonth">
+									<h3>Month</h3>
+								</div>
+								<div class="calendarSwitch">
+									<a href="javascript:void(0);">
+										<div id="nextMonth" class="calendarNext arrowDisplay"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="calendarInfo" class="calendarInfo">
+							<p style="padding: 5px; text-align:center;">If you cannot view the calendar, please ensure that JavaScript has been enabled and then reload the page.</p>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Facebook Feed -->
+				<div id="facebook" class="section">
+					<div class="contentSubTitle" style="margin-left: 5px">
+						<h2>Find us on Facebook</h2>
+					</div>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWombournetennisclub&tabs=timeline&width=318&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1159678281167811" width="318" height="500" style="border:none; overflow:hidden; width: 100%; display: block;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+			</div>			
+		</div>
+		
+		<!-- Footer -->		
+		<div class="footerContainer">
+			<div class="footerContent">
+				<div class="footerHead">
+					<h3>Quick Links</h3>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="https://www.facebook.com/WombourneTennisClub/" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/tenniswombourne" target="_blank">Twitter</a></li>
+						<li><a href="https://www.instagram.com/WombourneTennisClub/" target="_blank">Instagram</a></li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="https://wombourne.play-cricket.com/">Wombourne Cricket Club</a></li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="https://www.wombournebowlsclub.co.uk/">Wombourne Bowls Club</a></li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<ul>
+						<li><a href="policies.html">Policies</a></li>
+						<li><a href="contacts.html">Contact Us</a></li>
+						<li><a href="sitemap.html">Site map</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Load Scripts -->	
+		<script src="scripts/navResponsive.js?v=2023.7.1"></script>
+		<script src="scripts/sponsorSlideshow.js"></script>
+		<script src="scripts/calendarEvents.js?v=2023.6.5"></script>
+		<script src="scripts/setupCalendar.js"></script>
+	
+	</body>
+</html>

@@ -1,0 +1,1678 @@
+/*************************************************/
+/*---------------- General Styles ---------------*/
+/*************************************************/
+
+/* Notes */
+/*
+	Need a background colour for the main banner image slideshow
+*/
+
+/* 
+	H1 - Page Title
+	H2 - Content Title
+	Blue:
+		#000099 - H1 / H2 Titles
+		#16109C - Lightest Blue
+		#140E8C - Middle Blue
+		#120D7E - Darkest Blue
+		#17146C - Not Used (Even Darker Blue)
+	Background - #F4F4F4
+	Footer - #333333
+*/
+
+*{
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+html {
+	min-height: 100%;
+    overflow-y: scroll;
+}
+
+body{
+	background-color: #F5F8FA;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+a{
+	color: #000000;
+	cursor: pointer;
+}
+
+a:hover{
+	color: #000000;
+	cursor: pointer;
+}
+
+/* Page title */
+h1{
+	color: #000099;
+	font-size: 1.9em;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.pageTitle{
+	width: 100%;
+}
+.subTitleLinkGroup{
+	width: 100%;
+	float: left;
+}
+@media screen and (min-width: 650px) {
+	.subTitleLinkGroup{
+		width: 50%;
+	}
+}
+.subTitleLinkGroup .pageSubtitle{
+	float: left;
+}
+.pageSubtitle{
+    margin: 10px;
+    text-shadow: none;
+    color: black;
+}
+.pageSubtitleFull{
+	width: calc(100% - 20px);
+}
+
+/* Inner 'section' titles */
+h2{
+	color: #000099;
+	font-size: 1.44em;
+	font-weight: bold;
+}
+
+/* fixtures / stats page titles */
+.sectionHead h2{
+	color: #000099;
+	float: left;
+	font-size: 1.33em;
+	font-weight: bold;
+	margin: 7px auto;
+	width: 100%;
+}
+
+/* Footer Head */
+h3{
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px black;
+}
+
+/* Small sub title within content */
+h4{
+	color: black;
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0px 4px 0px 0px;
+}
+
+/* Home - News Title */
+h5{
+	color: black;
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* Small arrow stlying */
+.arrowDisplay{
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.arrowDown{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #DEDEDE;
+}
+
+.arrowRight{
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid;
+	border-top: 5px solid transparent;
+}
+
+.showList li{
+	list-style: disc;
+}
+
+
+/*************************************************/
+/*------------- Top Banner Slideshow ------------*/
+/*************************************************/
+.topBannerContainer{
+	width: 100%;
+}
+
+.topBanner{
+	margin: 0px auto;
+	/* max-width: 1100px; */
+}
+
+.topBannerImg{
+	position: relative;
+	width: 100%;
+}
+
+.topBannerImg img{
+	display: block;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+/* Club logo */
+.topBannerLogo{	
+	left: 10px;
+	position: absolute;
+	top: 10px;
+}
+
+.topBannerLogo img{	
+	max-height: 111px;
+	max-width: 85px;
+}
+
+/* Text ontop of images */
+.topBannerOverlay h2{	
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+}
+
+/* Text background ontop of images */
+.topBannerOverlay h2 span{
+	background: rgb(51,51,51); /* fallback color */
+    background: rgba(204, 204, 204, 0.39);
+	color: white; 
+	display: block;
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    padding: 4px 10px 2px 10px;
+}
+
+/* Club logo */
+.topBannerOverlay img{	
+	display: none;
+	float: left;
+	margin: 0px 3px 0px 0px;
+	max-height: 33px;
+	max-width: 25px;
+	position: relative;
+	top: 7px;
+}
+
+
+/*************************************************/
+/*----------------- Main Nav Bar ----------------*/
+/*************************************************/
+.mainNavContainer{
+	background-color: #16109C;
+	position: absolute;
+	width: 100%;
+	z-index: 1;    
+}
+
+.mainNavBar{
+	margin: 0px auto;
+	max-width: 1100px;
+}
+
+.mainNavBar ul{
+	padding: 0;
+	margin: 0;
+}
+
+.mainNav li{
+	background: #140E8C;
+	border: 1px solid #120D7E;
+	border-left: none;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.mainNav li:first-child, .mainNav li ul li{
+	border-left: 1px solid #120D7E;
+}
+
+.mainNav li ul{ 
+	display: none; 
+}
+
+.mainNavBar ul li a{
+	color: white;
+	display: block;
+	font-size: 1.1em;
+	padding: 10px;
+	text-shadow: 2px 2px 5px black;
+	white-space: nowrap;
+}
+
+.mainNavBar ul li a:hover{ 
+	background: #120D7E; 
+	color: white;
+}
+
+.mainNav li:hover > ul{
+	display: block;
+	position: absolute;
+}
+
+.mainNav li:hover li{ 
+	float: none; 
+}
+
+.mainNav li:hover a{ 
+	background-color: #140E8C;
+}
+
+.mainNav li:hover li a:hover{ 
+	background-color: #120D7E; 
+}
+
+.mainNav li ul li{ 
+	border-top: 1px solid #120D7E;
+}
+
+.mainNavBar ul ul ul{
+  left: 100%;
+  top: 0;
+}
+
+ul:before, ul:after{
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after{ 
+	clear: both; 
+}
+
+/* Icon to extend nav bar if low screen width */
+.icon{
+	color: white;
+	display: none;
+	font-size: 1.6em;
+	margin: 0px 5px 0px 0px;
+	text-shadow: 2px 2px 5px black;
+}
+
+.icon:hover{
+	color: #C3C3C3;
+}
+
+
+/*************************************************/
+/*-------------- Main Content Area --------------*/
+/*************************************************/
+.main {
+	margin: 0px auto;
+	margin-top: 40px;
+	max-width: 1100px;
+	overflow: auto;
+}
+
+/* Content Container */
+.section{
+	background-color: white;
+	border: 1px solid #C4C4C4;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #C4C4C4;
+	margin: 5px 5px 10px 5px;
+	overflow: auto;
+}
+
+/* Header (Inside .contentWrap) */
+.sectionHead{
+	color: black;
+	text-align: center;
+}
+
+.sectionHeadTitle{
+	margin: 0px auto;
+	width: 70%;
+}
+
+/* For "hide / show" link */
+.sectionHeadSide{
+	font-size: 0.77em;
+	margin: 0px 10px 0px 0px;
+	padding: 5px 0px 0px 0px;
+	text-align: right;
+}
+
+.sectionHeadSide a{
+	color: #818181;
+}
+
+.sectionHeadSide a:hover{
+	color: black;
+}
+
+.sectionBody{
+	display: block;
+}
+
+.sectionBody table{
+	border-collapse: collapse;
+	margin: 0px auto;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 98%;
+}
+
+/* col-1 & col-2 are paired */
+.col-1{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	width: 70%;
+}
+
+.col-2{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	width: 30%;
+}
+
+.col-3{
+	float: left;
+	margin: 5px 0px 5px 0px;
+	width: 100%;
+}
+
+/* col-4 & col-5 are paired */
+.col-4{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	width: 85%;
+}
+
+.col-5{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	width: 15%;
+}
+
+.col-6{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	width: 50%;
+}
+
+.col-7{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	width: 60%;
+}
+
+.col-8{
+	float: left;
+	width: 40%;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 15px;
+}
+
+#calendar{
+	max-width: 330px;
+}
+
+
+
+/*************************************************/
+/*----------------- Main Footer -----------------*/
+/*************************************************/
+.footerContainer{
+	background-color: #333333;
+	bottom: 0px;
+	color: white;
+	float: left;
+	margin: 5px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+}
+
+.footerContent{
+	margin: 0px auto;
+	max-width: 500px;
+	text-align: center;
+}
+
+.footerHead{
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+}
+
+/* Column for similar content */
+.footerCol{
+	float: left;
+	text-align: center;
+	width: 25%;
+}
+
+.footerCol li{
+	padding: 0px 0px 3px 0px;
+}
+
+.footerCol li a{
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.footerCol li a:hover{
+	color: #4992e4;
+}
+
+
+/*************************************************/
+/*------------------- Site Map ------------------*/
+/*************************************************/
+/* Indent on each category*/
+#sitemap ul ul{
+	margin: 0px 0px 0px 20px;
+}
+
+#sitemap li{
+	margin: 0px 0px 5px 0px;
+}
+
+#sitemap li{
+	font-size: 1.22em;
+}
+
+#sitemap li a:hover{
+	font-weight: bold;
+}
+
+#sitemap .arrowDown{
+	border-top: 5px solid black;
+}
+
+.siteMapTitle{
+	font-weight: bold;
+}
+
+
+/*************************************************/
+/*--------------- Tables (General) --------------*/
+/*************************************************/
+/* tableHover - Adds background colour on row hover */
+/* tableNoHover - Static background colour on rows */
+.tableHover tr:hover, .tableNoHover tr:nth-child(2n){
+	background-color: #EAEAEA;
+}
+
+/* Individual row without hover */
+.rowNoHover:hover{
+	background-color: white !important;
+}
+
+/* Blank row for spacing with bottom border */
+.rowSeparator{
+	border-bottom: 1px solid #C4C4C4;
+}
+
+/* Blank row for spacing */
+.rowEmpty{
+	height: 10px !important;
+}
+
+
+/******************************************************/
+/*------------------ Tables (Small) ------------------*/
+/* Small table used for fixtures & tournament winners */
+/******************************************************/
+/* All rows except first have a top border */
+.tableSmall tr:not(:first-child){
+	border-top: 1px solid #C4C4C4;
+}
+
+/* Set cell padding */
+.tableSmall th, td{
+	padding: 5px;
+}
+
+
+/*************************************************/
+/*---------------- Tables (Large) ---------------*/
+/*------- Large table used for team stats -------*/
+/*************************************************/
+/* First row of tableLarge has set height */
+.tableLarge tr:first-child{
+	height: 35px;
+	width: 8%;
+}
+
+/* Set cell padding */
+.tableLarge tr:first-child th{
+	padding: 5px;
+}
+
+/* Prevent :hover on heading rows */
+.tableLarge tr:hover:nth-child(n+3){
+	background: #EAEAEA;
+}
+
+.tableLarge th{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.tableLarge td{
+	font-size: 0.88em;
+	padding: 2px 0px 2px 0px;
+	width: 4%;
+}
+
+/* Row with W, L, or D */
+.rowStatWLD{
+	font-weight: bold;
+}
+
+
+/*************************************************/
+/*---------------- Content Area -----------------*/
+/*************************************************/
+.contentArea{
+	float: left;
+	margin: 0px 10px 0px 10px;
+}
+
+.contentCentered{
+	margin: 0px !important;
+	text-align: center !important;
+	width: 100% !important;
+}
+
+.contentCentered h4{
+	width: 100%;
+}
+
+.contentWrap{
+	overflow: auto;
+	width: 100%;
+}
+
+/* Image */
+/* Paired with .content-col-2 */
+.content-col-1{
+	float: left;
+	margin: 0px 5px 0px 0px;
+	width: 20%;
+}
+
+/* Image on right side */
+/* Paired withcontent-col-2-l */
+.content-col-1-r{
+	float: right;
+	margin: 0px 0px 0px 5px;
+	width: 20%;
+}
+
+/* Text */
+.content-col-2{
+	float: right;
+	width: 79%;
+}
+
+/* Text on left side */
+.content-col-2-l{
+	float: left;
+	width: 79%;
+}
+
+.content-col-3{
+	float: left;
+	margin: 0px 0px 8px 0px;
+	width: 100%;
+}
+
+.content-col-4{
+	float: left;
+	margin: 0px 5px 0px 0px;
+	width: 30%;
+}
+
+.content-col-5{
+	float: left;
+	width: 68%;
+}
+
+.content-col-6{
+	float: left;
+	width: 50%;
+}
+
+.contentGallery{
+	float: left;
+	margin: 3px;
+}
+
+.contentGalleryCol{
+	float: left;
+	width: 25%;
+}
+
+.contentGalleryCol img{
+	float: left;
+	padding: 3px;
+	width: 100%;
+}
+
+.sectionBanner, .sectionBanner img{
+	width: 100%;
+}
+
+.contentTitle{
+	margin: 0px 0px 3px 0px;
+}
+
+.contentSubTitle{
+	margin: 5px 0px 5px 0px;
+	overflow: auto;
+}
+
+.contentSubTitle p{
+	margin: 0px 0px 5px 7px;
+}
+
+.contentInfo{
+	width: 100%;
+}
+
+.contentInfo table{
+	float: left;
+	margin: 5px 0px 0px 0px;
+	text-align: center;
+	max-width: 40%;
+}
+
+.contentInfo p{
+	margin: 0px 0px 8px 0px;
+}
+
+.contentInfo ul{
+	margin: 0px 0px 0px 30px;
+}
+
+.contentInfo li{
+	margin: 0px 0px 8px 0px;
+}
+
+.contentImg{
+	float: left;
+	width: 100%;
+}
+
+.contentImg img{
+	margin: 0px 0px 5px 0px;
+	max-width: 100%;
+}
+
+.newsPreview{
+	margin: 0px 0px 5px 0px;
+	overflow: auto;
+	width: 100%;
+}
+
+.newsPreviewLink {
+	font-weight: bold;
+	color: #433CEF !important
+}
+
+.newsPreviewLink a:hover{
+	cursor: pointer;
+}
+
+.itemCredit{
+	font-size: 10px;
+	font-style: italic;
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.memberInfo{
+	margin-top: 20px;
+}
+
+.memberForm li a:hover{
+	font-weight: bold !important;
+}
+
+.memberForm img{
+	margin: 0px 5px 0px 0px;
+	max-width: 25px;
+}
+
+
+
+/**************************************************
+/*----------- Top Main Banner Slideshow ---------*/
+/*************************************************/
+.imgSlider {
+	overflow: hidden;
+	margin: auto;
+	width: 100%;
+}
+
+.imgSlider ul {
+	position: relative;
+	width: 500%;
+	left: 0;
+	font-size: 0;
+	/* animation: 20s slider infinite; */
+}
+
+.imgSlider li img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0%;
+	}
+	
+	20% {
+		left: 0%;
+	}
+	
+	25% {
+		left: -100%;
+	}
+	
+	45% {
+		left: -100%;
+	}
+	
+	50% {
+		left: -200%;
+	}
+	
+	70% {
+		left: -200%;
+	}
+	
+	75% {
+		left: -300%;
+	}
+	
+	95% {
+		left: -300%;
+	}
+}
+
+
+
+/**************************************************
+/*------- Image Slideshow (Sponsor Images) ------*/
+/*************************************************/
+.sponsorImgSlides{
+	float: left;
+	width: 100%;
+}
+
+.sponsorImgDots{
+	float: left;
+	margin: 3px 0px 3px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.sponImg{
+	display: none;
+	margin: 0px auto;
+	max-width: 318px;
+	width: 100%;
+}
+
+.dot {
+	background-color: #BCBCBC;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 13px;
+	margin: 0px 2px 0px 2px;
+	transition: background-color 0.3s ease;
+	vertical-align: middle;
+	width: 13px;
+}
+
+.dotActive, .dot:hover {
+	background-color: #797979;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+
+
+/*************************************************/
+/*------------------- Calendar ------------------*/
+/*************************************************/
+/* 4 main sections of the calendar */
+.calendarHead, .calendarTabs, .calendarControls, .calendarInfo{
+	float: left;
+	overflow: auto;
+	width: 100%;
+}
+
+.calendarHead{
+	background-color: #16109C;
+	padding: 5px;
+	text-align: center;
+}
+
+.calendarHead h2{
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.calendarTabs a{
+	background-color: #16109C;
+	border-bottom: 1px solid #120D7E;
+	border-top: 1px solid #120D7E;
+	color: white;
+	float: left;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	text-shadow: 2px 2px 5px black;
+	width: 50%;
+}
+
+.calendarTabs a:hover{
+	background-color: #120D7E;
+	font-weight: bold;
+}
+
+.calendarCurTab{
+	background-color: #17146C !important;
+	font-weight: bold;
+}
+
+.calendarTabs a:last-of-type{
+	border-left: 1px solid #120D7E;
+}
+
+.calendarControls{
+	background-color: #16109C;
+	padding: 10px 0px 10px 0px;
+}
+
+.calControlWrap{
+	margin: 0px auto;
+	max-width: 250px;
+}
+
+.calendarSwitch{
+	float: left;
+	text-align: center;
+	width: 10%;
+}
+
+.calendarSwitch a .arrowDisplay{
+	margin: 0px;
+}
+
+/* Arrow to choose next month */
+.calendarNext{
+	border-bottom: 8px solid transparent;
+	border-left: 19px solid white;
+	border-top: 8px solid transparent;
+}
+
+/* Arrow to choose previous month */
+.calendarPrev{
+	border-bottom: 8px solid transparent;
+	border-right: 19px solid white;
+	border-top: 8px solid transparent;
+}
+
+/* Arrows colour changes on hover */
+.calendarNext:hover{
+	border-left: 19px solid red;
+}
+
+/* Arrows colour changes on hover */
+.calendarPrev:hover{
+	border-right: 19px solid red;
+}
+
+.calendarMonth{
+	float: left;
+	text-align: center;
+	width: 80%;
+}
+
+/*---------- ul, li - display as calendar ----------*/
+/* First ul day names */
+.calendarInfo ul:first-child{
+	font-weight: bold;
+}
+
+.calendarInfo ul:first-child li{
+	border-top: 0px;
+}
+
+.calendarInfo ul:last-of-type{
+	border-radius: 0px 0px 4px 4px;
+}
+
+.calendarInfo ul:first-child li:not(:last-of-type){
+	border-right: 1px solid #C4C4C4;
+}
+
+.calendarInfo li{
+	background: linear-gradient(to bottom,transparent 0,rgba(3, 3, 3, 0.1) 100%);
+	border-top: 1px solid #C4C4C4;
+	float: left;
+	height: 40px;
+	min-width: 14.27%;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+/* Day is current day */
+.calToday{
+	color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 7px 0px 0px 0px !important
+}
+
+/* day has an event */
+.calEvent{
+	color: #4992e4;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 7px 0px 0px 0px !important
+}
+
+.calEvent:hover{
+	color: #271DFF;
+}
+
+/* Info box displayed on event day hover */
+.eventInfoBox{
+    background-color: black;
+	border-radius: 6px;
+    color: #fff;  
+	font-size: 0.8em;
+	margin: 27px 0px 0px -53px;
+    position: absolute;
+    text-align: center;
+	visibility: hidden;
+    width: 120px;
+}
+
+/* Arrow ontop of info box */
+.eventInfoBox::after {
+    border-color: transparent transparent black transparent;
+	border-style: solid;
+	border-width: 5px;
+	content: " ";
+	left: 50%;
+	position: absolute;
+	bottom: 100%;
+}
+
+/* Display info box on event day hover */
+.calEvent:hover .eventInfoBox{
+	visibility: visible;
+}
+
+/* First day of week info box position adjustment */
+.infoBox1{
+	margin: 27px 0px 0px -11px;
+}
+
+.infoBox1::after{
+	margin: 0px 0px 0px -42px;
+}
+
+/* Last day of week info box position adjustment */
+.infoBox2{
+	margin: 27px 0px 0px -88px;
+}
+
+.infoBox2::after{
+	margin: 0px 0px 0px 36px;
+}
+
+
+/*------ Event List - Displays Events as List ------*/
+/* Limit height of visible list */
+.calList{
+	max-height: 240px;
+}
+
+.calendarInfo table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.calendarInfo tr{
+	background: linear-gradient(to bottom,transparent 0,rgba(3, 3, 3, 0.1) 100%);
+	height: 43px;
+}
+
+/* Event Date */
+.calendarInfo th{
+	max-width: 60px;
+}
+
+/* Event Title */
+.calendarInfo tr td:first-of-type{
+	width: 60%;
+}
+
+/* Event Time */
+.calendarInfo tr td:last-child{
+	text-align: center;
+	width: 20%;
+}
+
+
+
+/*************************************************/
+/*---------- Responsive (multi) ----------*/
+/*------------- Club Logo resizing --------------*/
+/*************************************************/
+@media screen and (max-width: 1145px) {
+	.topBannerLogo img{
+		max-height: 95px;
+		max-width: 71px;
+	}
+}
+
+@media screen and (max-width: 1045px) {
+	.topBannerLogo img{
+		max-height: 75px;
+		max-width: 57px;
+	}
+}
+
+@media screen and (max-width: 935px) {
+	.topBannerLogo img{
+		max-height: 55px;
+		max-width: 42px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.topBannerLogo{
+		display: none;
+	}
+	
+	.topBannerOverlay img{
+		display: block;
+	}
+}
+
+
+/*************************************************/
+/*---------- Responsive (1030px width) ----------*/
+/*--------- Content Columns Fill Width ----------*/
+/*************************************************/
+@media screen and (max-width: 1030px) {
+	.col-1, .col-2{
+		margin: 0px;
+		min-width: 100% !important;
+	}
+	
+	.col-2 .contentArea{
+		width: 50% !important;
+	}
+	
+	.section{
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#sponsors{
+		float: left;
+		min-width: 250px;
+		width: 30%;
+		margin: 10px 5px 10px 5px;
+	}
+	
+	#calendar{
+		float: left;
+	}
+	
+	#facebook{
+		float: left;
+		min-width: 314px;
+	}
+	.sponsor-info-container{
+		width: 20%;
+		min-width: 250px;	
+		float: left;
+		margin-right: 10px;
+	}
+	#sponsorsAd{
+		width: 100%;
+	}
+}
+
+/*************************************************/
+/*---------- Responsive (965px width) -----------*/
+/*------------ Collapse Main Nav Bar ------------*/
+/*------------- Re-size Large Table -------------*/
+/*************************************************/
+@media screen and (max-width: 1050px) {
+	/* Update main content margin */
+	.main {
+		margin-top: 32px;
+	}
+	
+	/* Only display the first Nav Bar li */
+	.mainNavBar li:not(:first-child) {
+		display: none;
+	}
+	
+	/* Display icon to extend nav bar */
+	.mainNavBar a.icon {
+		float: right;
+		display: block !important;
+	}
+	
+	.mainNavBar.responsive {
+		display: block;
+	}
+	
+	.mainNavBar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.mainNavDropUp{
+		display: none;
+	}
+	
+	/* 2nd / 3rd tier nav bar elements */
+	.mainNavDropDown{
+		display: inline-block !important;
+		left: 0px !important;
+		position: relative !important;
+		width: 100%;
+	}
+	
+	.mainNavBar.responsive li {
+		float: none;
+		display: block;
+		text-align: left;
+		border: none;
+	}
+	
+	.mainNavBar.responsive li a {
+		border: 1px solid #120D7E;
+	}
+	
+	/* All nav bar links */
+	.mainNavBar ul li a {
+		padding: 6px;
+	}
+	
+	/* Nav Bar 2nd tier */
+	.mainNavBar.responsive li ul li a{
+		padding-left: 25px;
+	}
+	
+	/* Nav Bar 3rd tier */
+	.mainNavBar.responsive li ul li ul li a{
+		padding-left: 50px;
+	}
+	
+	/* Arrows indicating drop down is available */
+	/* .arrowRight becomes arrowDown */
+	.arrowRight{
+		border: none;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid;
+	}
+	
+	.tableLarge{
+		font-size: 0.6em;
+		width: 94%;
+	}
+	
+	.tableLarge tr:first-child{
+		height: 50px;
+	}
+	
+	.tableLarge tr:first-child th{
+		transform: rotate(90deg);
+	}
+}
+
+
+/*************************************************/
+/*---------- Responsive (900px width) -----------*/
+/*----------- Update Content Columns ------------*/
+/*************************************************/
+@media screen and (max-width: 900px) {
+	.col-2 .contentArea{
+		width: 100% !important;
+	}
+	
+	.content-col-1, .content-col-1-r{
+		margin: 0px auto;
+		width: 30%;
+	}
+	
+	.content-col-2, .content-col-2-l{
+		margin: 0px auto;
+		width: 68%;
+	}
+	
+	.contentArea{
+		margin: 0px 10px 0px 10px;
+	}
+	
+	.contentImg{
+		text-align: center;
+	}
+}
+
+
+/*************************************************/
+/*---------- Responsive (745px width) -----------*/
+/*------- Content-col becomes full width --------*/
+/*************************************************/
+@media screen and (max-width: 745px) {
+	.content-col-1, .content-col-1-r, .content-col-2, .content-col-2-l{
+		margin: 0px auto;
+		width: 100%;
+	}
+	
+	.contentImg img{
+		max-width: 45%;
+	}
+	.sponsor-info-container{
+		width: 100%;
+	}
+	#sponsorsAd{
+		width: 98%;
+	}
+	#sponsors{
+		width: 98% !important;
+	}
+}
+
+@media screen and (max-width: 745px) {
+	.poster-list .content-col-1{
+		width: 50% !important;
+	}
+	.poster-list .content-col-1 .contentImg img{
+		max-width: 90% !important;
+	}
+}
+
+
+/*************************************************/
+/*---------- Responsive (650px width) -----------*/
+/*--------- Home - FaceBook / Sponsors ----------*/
+/*************************************************/
+@media screen and (max-width: 650px){
+	#sponsors{
+		width: auto;
+	}
+	
+	.sponImg{
+		max-width: initial;
+	}
+	
+	.content-col-6{
+		width: 100%;
+	}
+
+}
+
+
+/*************************************************/
+/*---------- Responsive (530px width) -----------*/
+/*------------ Re-size Table Content ------------*/
+/*************************************************/
+@media screen and (max-width: 530px) {
+	.tableSmall{
+		font-size: 0.6em;
+		width: 98%;
+	}
+	
+	.sectionBody td, th{
+		padding: 5px 0px 5px 0px;
+	}
+	
+	/* Smaller font size */
+	.sectionHead h2{
+		font-size: 1em;
+	}
+	
+	/* Smaller font size */
+	.sectionHeadSide{
+		font-size: 0.6em;
+	}
+}
+
+
+/*************************************************/
+/*---------- Responsive (450px width) -----------*/
+/*-------- Re-size Footer (Quick Links) ---------*/
+/*************************************************/
+@media screen and (max-width: 450px) {
+	.footerCol {
+		width: 100%;
+		margin: 0px 0px 3px 0px;
+	}
+}
+
+
+/*************************************************/
+/*---------- Responsive (350px width) -----------*/
+/*---------- Alter Top Banner Overlay -----------*/
+/*************************************************/
+/* Remove logo icon */
+@media screen and (max-width: 350px) {
+	.topBannerOverlay img{
+		display: none;
+	}
+/* Overlay text becomes centered */
+	.topBannerOverlay h2 span {
+		text-align: center;
+	}
+}
+
+
+.home-table table{
+	border-collapse: collapse;
+	max-width: 100% !important;
+	width: 100% !important;
+	text-align: center;
+}
+
+.home-table tr:not(:first-child){
+	border-top: 1px solid #C4C4C4;
+}
+
+.home-table tr:nth-child(2n){
+	background-color: #EAEAEA;
+}
+
+.gal-item{
+	padding: 5px;
+	float: left;
+}
+
+.gal-item-sm{
+	width: 25%;
+}
+
+.gal-item-lg{
+	width: 50%;
+}
+
+.gal-item-img{
+	height: 200px;
+	overflow: hidden;
+}
+
+.gal-item-img img{
+	max-width: 100%;
+}
+
+.gal-item-img-tall img{
+	position: relative;
+	bottom: 20%;
+}
+
+.gal-item-text{
+	height: 100px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+	.gal-item-sm{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.gal-item-sm, .gal-item-lg{
+		width: 100%;
+	}
+	
+	.gal-item-img{
+		height: initial;
+	}
+	
+	.gal-item-img-tall img{
+		bottom: 0px;
+	}
+}
+
+.tourn-title{
+	text-align: center;
+}
+.tourn-head table{
+	width: 100%;
+	float: left;
+	padding-top: 10px;
+}
+
+.tourn-bracket table{
+	float: left;
+	text-align: center;
+	height: 500px;
+	padding: 0px 10px 10px 10px;
+}
+
+.tourn-bracket-2 table, .tourn-head-2 th{
+	width: 50%;
+}
+.tourn-bracket-3 table, .tourn-head-3 th{
+	width: 33%;
+}
+.tourn-bracket-4 table, .tourn-head-4 th{
+	width: 25%;
+}
+.tourn-bracket-5 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.tourn-bracket-5 table, .tourn-head-5 th{
+	width: 20%;
+}
+.tourn-bracket-5 table {
+	flex: 1 20%;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 100%;
+}
+
+.tourn-1{
+	height: 6.25%;
+}
+
+.tourn-1A td{
+	border-bottom: 1px solid black;
+}
+
+.tourn-empty{
+	background-color: #c5c5c5;
+	border-bottom: none !important;
+}
+
+.h-50{
+	height: 50%;
+}
+
+.tourn-quarter tr{
+	height: 12.5%;
+}
+
+.tourn-semi tr{
+	height: 25%;
+}
+
+.tourn-final tr{
+	height: 50%;
+}
+
+/**Top name**/
+.tourn-quarter tr:nth-of-type(2n+1) td, .tourn-semi tr:nth-of-type(2n+1) td, .tourn-final tr:nth-of-type(2n+1) td{
+	border-bottom: 1px solid black;
+	padding-top: 10%;
+}
+
+.tourn-semi tr:nth-of-type(2n+1) td{
+	padding-top: 35%;
+}
+
+.tourn-final tr:nth-of-type(2n+1) td{
+	padding-top: 100%;
+}
+
+/**Bottom name**/
+.tourn-quarter tr:nth-of-type(2n) td{
+	padding-bottom: 10%;
+}
+.tourn-semi tr:nth-of-type(2n) td{
+	padding-bottom: 35%;
+}
+.tourn-final tr:nth-of-type(2n) td{
+	padding-bottom: 100%;
+}
+
+@media screen and (max-width: 750px){
+	.tourn-final tr:nth-of-type(2n+1) td{
+		padding-top: 130%;
+	}
+	.tourn-final tr:nth-of-type(2n) td{
+		padding-bottom: 130%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.tourn-final tr:nth-of-type(2n+1) td{
+		padding-top: 150%;
+	}
+	.tourn-final tr:nth-of-type(2n) td{
+		padding-bottom: 150%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.tourn-head, .tourn-bracket{
+		font-size: 80% !important;
+	}
+	/**Top name**/
+	.tourn-quarter tr:nth-of-type(2n+1) td{
+		padding-top: 10%;
+	}
+
+	.tourn-semi tr:nth-of-type(2n+1) td{
+		padding-top: 70%;
+	}
+
+	.tourn-final tr:nth-of-type(2n+1) td{
+		padding-top: 200%;
+	}
+
+	/**Bottom name**/
+	.tourn-quarter tr:nth-of-type(2n) td{
+		padding-bottom: 10%;
+	}
+	.tourn-semi tr:nth-of-type(2n) td{
+		padding-bottom: 70%;
+	}
+	.tourn-final tr:nth-of-type(2n) td{
+		padding-bottom: 200%;
+	}
+}
+@media screen and (max-width: 700px){
+	.col-7, .col-8{
+		width: 100%;
+	}
+}
+
+.team-page h1 {
+	margin: 10px 22px;
+}
+.team-wrap {
+	float: left;
+	margin-bottom: 1em;
+	padding: 0 10px 1em;
+	width: 100%;
+}
+.team-league {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 0 14px 10px;
+}
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%
+}
+.team {
+	flex: 1 50%;
+	margin-bottom: 2em;
+	padding: 0 1em;
+}
+@media (min-width: 768px) {
+	.team {
+		flex: 1 calc(100% / 3);
+		max-width: calc(100% / 3);
+	}
+}
+@media (min-width: 992px) {
+	.team {
+		flex: 1 25%;
+		max-width: 25%;
+	}
+}
+.teamm-img {
+	margin-bottom: 8px;
+}
+.team-img img {
+	height: 100%;
+	object-fit: contain;
+	margin-bottom: 8px;
+	max-width: 100%;
+}
+.team-desc {
+	font-size: 1.1em;
+	font-weight: bold;
+}
