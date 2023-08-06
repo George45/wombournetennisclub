@@ -1628,12 +1628,12 @@ ul:after{
 }
 
 .team-page h1 {
-	margin: 10px 22px;
+	margin: 10px 12px;
 }
 .team-wrap {
 	float: left;
 	margin-bottom: 1em;
-	padding: 0 10px 1em;
+	padding-bottom: 1em;
 	width: 100%;
 }
 .team-league {
@@ -1663,7 +1663,7 @@ ul:after{
 		max-width: 25%;
 	}
 }
-.teamm-img {
+.team-img {
 	margin-bottom: 8px;
 }
 .team-img img {
